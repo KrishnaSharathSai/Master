@@ -1,0 +1,41 @@
+public class CC_ApproveResearchableProductReplacementSmartDesktop extends PageObject {
+	
+	
+	private By radio_product= By.xpath("");
+	private By Dropdown_BuyoutDescription=By.xpath("");
+	private By  btn_triggerCustomerReplacementSelection= By.xpath("");
+	private By textfeild_screensize=By.xpath("");
+	private By textfeild_Refresh_Hz= By.xpath("");
+	private By textfeild_HDMIports=By.xpath("");
+	private By dropdown_HDresolution= By.xpath("");
+	private By ele_yes= By.xpath("");
+	
+	
+	public void ClickProduct() {
+		waitForExpectedElement(radio_product).click();
+	} 
+	
+	public Select BuyoutDescriptiondropdown() {
+		return new Select(waitForExpectedElement(Dropdown_BuyoutDescription));        
+	}
+	public void ClicktriggerCustomerReplacementSelection() {
+		waitForExpectedElement(btn_triggerCustomerReplacementSelection).click();
+	}
+	public Select HDresolutiondropdown() {
+		return new Select(waitForExpectedElement(dropdown_HDresolution));        
+	}
+	public WebElement enterscreensize() {
+		return waitForExpectedElement(textfeild_screensize);
+	}
+	public WebElement enterRefresh_Hz() {
+		return waitForExpectedElement(textfeild_Refresh_Hz);
+	}
+	public WebElement enterHDMIports() {
+		return waitForExpectedElement(textfeild_HDMIports);
+	}
+	public void Clickyes() {
+		waitForExpectedElement(ele_yes).click();
+	}
+	
+
+}
