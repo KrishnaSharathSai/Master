@@ -1,0 +1,46 @@
+	@Then("^user selects Buyout type$")	
+	public void user_selects_Buyout_type()throws Throwable {	
+		pageLoad();
+		WebDriverHelper.REAL_DRIVER.switchTo().defaultContent();
+		frameToBeAvailableAndSwitchToIt("PegaGadget1Ifr");
+		CC_approveresearchableproductreplacementsmartdesktop.ClickProduct();
+		
+	}
+	@Then("^user selects Buyout Description$")	
+	public void user_selects_Buyout_Description()throws Throwable {			
+		CC_approveresearchableproductreplacementsmartdesktop.BuyoutDescriptiondropdown().selectByVisibleText("Unrepairable");;
+	}
+	
+	@Then("^user clicks on Trigger Customer Replacement Selection$")	
+	public void user_clicks_on_Trigger_Customer_Replacement_Selection() throws Throwable {	
+		CC_approveresearchableproductreplacementsmartdesktop.ClicktriggerCustomerReplacementSelection();
+	}
+	
+	@Then("^Enter Screen Size \"([^\"]*)\"$")
+	public void Enter_Screen_Size(String size) throws Throwable {
+		CC_approveresearchableproductreplacementsmartdesktop.enterscreensize().clear();	
+		CC_approveresearchableproductreplacementsmartdesktop.enterscreensize().sendKeys(size);
+	}
+	@Then("^Enter Refresh/HZ \"([^\"]*)\"$")
+	public void Enter_RefreshHZ(String RefreshHZ) throws Throwable {
+		CC_approveresearchableproductreplacementsmartdesktop.enterRefresh_Hz().clear();	
+		CC_approveresearchableproductreplacementsmartdesktop.enterRefresh_Hz().sendKeys(RefreshHZ);
+		
+	}
+	@Then("^enter HDMIports \"([^\"]*)\"$")
+	public void Enter_HDMIports(String ports) throws Throwable {
+		CC_approveresearchableproductreplacementsmartdesktop.enterHDMIports().clear();	
+		CC_approveresearchableproductreplacementsmartdesktop.enterHDMIports().sendKeys(ports);
+		
+	}
+	@Then("^user Selects HDResolution \"([^\"]*)\"$")
+	public void user_Selects_HDResolution(String Resolution) throws Throwable {
+		CC_approveresearchableproductreplacementsmartdesktop.HDresolutiondropdown().selectByVisibleText(Resolution);
+		
+	}
+	
+	@Then("^user selects yes$")
+	public void user_select_yes() throws Throwable{
+		CC_approveresearchableproductreplacementsmartdesktop.Clickyes();
+	}
+	
