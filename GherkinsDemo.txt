@@ -1,0 +1,15 @@
+    Given User Navigate to the Application "<URL1>"
+    When user credentials are entered
+    And login button is clicked
+    Then user should switch to "CareCentral_CCR" Access Group
+    When user clicks on start new customer interaction
+    And enters client name "<client name>"
+    Then Select Search Method
+    And enters phone number "<phone number>"
+    And clicks search
+    Then user clicks on create a new customer
+    And enters first name "<first name>"
+    And enters last name "<last name>"
+    And enters postal code "<postal code>"
+    And enters email address "<email address>"
+    And user clicks save button 
